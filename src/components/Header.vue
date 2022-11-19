@@ -1,5 +1,6 @@
 <template>
-    <div>
+
+    <div class="fundo">
         <h1>Logo Here</h1>
     </div>
     
@@ -9,3 +10,11 @@ export default {
     nome: 'Header'
 }
 </script>
+
+<style scoped>
+    .fundo{
+        background: #ccc;
+        margin:0 auto;
+
+    }
+</style>

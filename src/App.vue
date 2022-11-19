@@ -20,4 +20,15 @@ export default {
   }
 }
 </script>
+<style>
+  body{
+    background: gray;
+    color: white;
+    
+  }
+
+img{
+  max-width: 200px;
+}
+</style>
 
