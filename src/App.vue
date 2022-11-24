@@ -15,7 +15,7 @@ export default {
     LifeCycle,
     Header,
     Main
-    
+ 
     
   }
 }

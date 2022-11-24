@@ -1,9 +1,9 @@
 <template>
     <div>
            <form action="">
-           <div><input type="text" name="" id=""></div> 
-           <div> <input type="text" name="" id=""></div>
-           <div> <input type="submit" value=""></div>
+           <div><input type="text" v-model="name"></div> 
+           <div> <input type="text" v-model="email"></div>
+           <div> <input type="submit" value="" @submit="enviarFormulario($event)"></div>
         </form>
 
         <div>
@@ -40,7 +40,8 @@ export default {
     data(){
         return{
             
-            email: "cps89.dev@gmail.com",
+            name:"",
+            email: "",
             mostra_email: false,
             meu_link: 'http://www.google.com',
             TextoBotao: 'Mostrar Email',
@@ -61,7 +62,18 @@ export default {
                 }else{
                     this.TextoBotao = 'Ocultar Email'
                 }
+            },
+            enviarFormulario(e){
+                e.preventDefault();
+                const name = this.name;
+                const email = this.email;
+
+                console.log('Formulario Enviado!');
+                console.log('O nome é :' + name);
+                console.log("O Email é:" + email);
             }
+
+            
         }
 
     
